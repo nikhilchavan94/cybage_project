@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+
+.navbar {
+    justify-content: space-between;
+    color: rgb(106, 214, 250);
+}
+
+.form-layout {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 10%;
+}
+
+.login {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 10%;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 20pc;
+    padding: 2%;
+    margin-bottom: 5%;
+    border: 1px solid violet;
+    border-radius: 5px;
+}
+
+.form-button {
+    width: 21.5pc;
+    padding: 2%;
+    border: 1px solid lightblue;
+    color: lightblue;
+    border-radius: 5px;
+    cursor: pointer;
+}

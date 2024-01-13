@@ -1,0 +1,16 @@
+<div class="add_product">
+    <h1 style="color: rgb(58, 150, 255);margin-left: 430px;margin-bottom:-100px;margin-top: 100px;">Update Product</h1>
+    <div class="form-layout">
+        <p style="color: rgb(14, 184, 252); margin-left: 100px;">{{message}}</p>
+        <form class="form" [formGroup]="product_form" (ngSubmit)="update_product(product_form.value)">
+
+            <input type="text" class="form-input" placeholder="Enter Product Name" formControlName="product_name" ngModel="{{product_data?.product_name}}">
+            <input type="text " class="form-input " placeholder="Enter Product Category" formControlName="product_category" ngModel="{{product_data?.product_category}}">
+            <input type=" text " class="form-input " placeholder="Enter Product Description" formControlName="product_description" ngModel="{{product_data?.product_description}}">
+            <input type="text " class="form-input " placeholder="Enter Product Image Url" formControlName="product_imgurl" ngModel="{{product_data?.product_imgurl}}">
+            <input type=" text " class="form-input " placeholder="Enter Product Price" formControlName="product_price" ngModel="{{product_data?.product_price}}">
+            <button style="cursor:default;" class="form-button ">Add Product</button>
+
+        </form>
+    </div>
+</div>

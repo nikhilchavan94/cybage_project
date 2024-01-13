@@ -1,0 +1,108 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "seller": [
+    {
+      "name": "Nikhil",
+      "surname": "Chavan",
+      "email": "n@gmail.com",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "name": "adi",
+      "surname": "chavan",
+      "email": "a@gmail.com",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "name": "baki",
+      "surname": "hanma",
+      "email": "b@gmail.com",
+      "password": "123",
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "product_name": "Shoe",
+      "product_category": "Shoe",
+      "product_description": "Shoes for Men",
+      "product_imgurl": "https://th.bing.com/th/id/OIP.Y2mRB5H4lWpWAnz6Uv7spgHaE8?w=198&h=180&c=7&r=0&o=5&pid=1.7",
+      "product_price": "10,000",
+      "id": 4
+    },
+    {
+      "product_name": "toy",
+      "product_category": "toy car",
+      "product_description": "kids toy car",
+      "product_imgurl": "data:image/jpeg;base64,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",
+      "product_price": "20k",
+      "id": 5
+    },
+    {
+      "product_name": "Google Pixel 8",
+      "product_category": "Smartphone",
+      "product_description": "https://specs-tech.com/wp-content/uploads/2021/10/Google-Pixel-8.jpg",
+      "product_imgurl": "https://specs-tech.com/wp-content/uploads/2021/10/Google-Pixel-8.jpg",
+      "product_price": "70,000",
+      "id": 6
+    },
+    {
+      "product_name": "Titan Watch",
+      "product_category": "Watch",
+      "product_description": "Watch for Men",
+      "product_imgurl": "https://th.bing.com/th?q=Luxury+Watch&w=120&h=120&c=1&rs=1&qlt=90&cb=1&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=strict&t=1&mw=247",
+      "product_price": "35,000",
+      "id": 7
+    },
+    {
+      "product_name": "MacBook Air",
+      "product_category": "Laptop",
+      "product_description": "Laptop",
+      "product_imgurl": "https://th.bing.com/th/id/OIP.mnbEiyh0D6UeGZFx82qY-wHaEK?w=294&h=180&c=7&r=0&o=5&pid=1.7",
+      "product_price": "1,10,000",
+      "id": 8
+    },
+    {
+      "product_name": "Google Pixel 8",
+      "product_category": "Smartphone",
+      "product_description": "https://specs-tech.com/wp-content/uploads/2021/10/Google-Pixel-8.jpg",
+      "product_imgurl": "https://specs-tech.com/wp-content/uploads/2021/10/Google-Pixel-8.jpg",
+      "product_price": "70,000",
+      "id": 9
+    },
+    {
+      "product_name": "toy",
+      "product_category": "toy car",
+      "product_description": "kids toy car",
+      "product_imgurl": "data:image/jpeg;base64,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",
+      "product_price": "20k",
+      "id": 11
+    },
+    {
+      "product_name": "Smartwatch",
+      "product_category": "Watch",
+      "product_description": "Watch For Men/Women",
+      "product_imgurl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoKCgoKCgsMDAsPEA4QDxYUExMUFiIYGhgaGCIzICUgICUgMy03LCksNy1RQDg4QFFeT0pPXnFlZXGPiI+7u/sBCgoKCgoKCwwMCw8QDhAPFhQTExQWIhgaGBoYIjMgJSAgJSAzLTcsKSw3LVFAODhAUV5PSk9ecWVlcY+Ij7u7+//CABEIAHoAegMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAFAAEDBAYHAgj/2gAIAQEAAAAA7KyaCCJmEWjk6XpvPM85PJJqaeIjMb43e9Ni/nioRHTdd2IUbXk2mrkbjnG5rVSLsW195us13clm4Li7XuCt1zVmgNCr525NvmmpqM+PFd70J/KClCV2vn5V1omIjjO264+FHqET0ih8uQlatWP6C0JYTBHAC6PmfmT0aGRlO66mXF15/V/U4X50lnqedh1jeLkRnF7vTGQfzBSngl6hqOkrOjbCfWsExVGnBqtqRjAiDuXOapmHZ5muahBBk010lKzIRmlDr6wrzdJFF6ZkhuaF0it4iWvJevLJJJOmdkvf/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAKAgIQAxAAAAAAAAAAAAAVAAFQAAAAAAAAAP/EAEMQAAIBAwICBggDBAYLAAAAAAECAwAEEQUSITEGEBNBUWEHFCIyUnGBkTNioSAjQsFUcpKi0eEWJDBTgoOjs9Pw8f/aAAgBAQABPwA8+vgKeYD3RmmllP8AFjyFbn+JvvW9/jb70ZXVWfeQq8WYnAHzJqTpTpcDYbUI2P5MvVr0n0q5IUXSZ/s0LmFtvtgbvdJ5N8j+yedEhQSSAACSTyAFa/6R7fTpWgsbXtiOcjPik9Kc/wDHp7t/zl/8dD0oxd+mzfSVKHpPs++wuPulJ6S9Nc4NtcR+ZVXFWmum6hWd7ZTC3BZYWJRvo1dI9Pnv7eG9guWns1ABh5CNvEija47qNv5Vp+qXen5Q5ntjweF+RHlWlaumYYmlMtvPn1aU+9kc4X/OKtNSsr/Pq06y4JBKkEAjuPn1nnXTrVTpmj4U4ebNRM0tywdFklcOPbORkjgRjvoEfAP/AEYprULpq3Bii4uMNvO/DblA2/NCaBUnAjyauEj3lI4yrIoVgG35Ye82a9HEpu7DUrF+KPD9mFaI0kFxJG/GKaIll81/xFXGmEszRyWoBZiFEucDPDiRUmnzrn8I/KQGjaXAP4X95aW1v1huI4oMxTAbiZFQRuvFJgSeBQ1o1s1lbI5lEs0jGV5Bw3M3En60pDKCORHUedelKY9tp8A44TcVpMhgykgg5BFLGWIAppZpLVLftQ0MbFgoA9knzpS0Tq6nDKcg+BpcAnJbkeVejCMpa6rc/BA1aTu9ft+Puhz9lrVbeK0dpWZVidwF8SzdwAqS703PG6UHwZGH8qNzp55XcB+uKb1OVSpngIP5xVjri2Vp6t2bXNx2vZQpHhhyzl/BRWkyX0lsPXRCs3A7IhgKCOo869JFwh190ZA4igwATjjir7To7G2sZRKzNPGXZSAMYAq80i70q59Uu8RuwhYuvtp2cvEMCKvkQG123kc4ig7LKwmPCpyLZ5mrW0SKP1u64IMFFIySSMjgeZPNR9TV8Wkma5ml4z2odAmWI/gVXLeQ4mugkXY9FL+b4yqVoi5vJG+GE/3iKv0zGrDmD+hqSMEnKj6gVJawnnFGfmgo2dt/R4f7AqB/U9RtSqRpE5CsEjVcnkMkDJq0OJSPFT1HnXTOcXPSLU3Hu9oVrTtDe6t0uZ7y3soJQ/YtMGPa7Dg4CA4XzNSwSXuhXNleLs1TQOYbm9of5x1GkQT1ibOz+EH2y3hkHgfyr9Wq/NzNtllRlTjsXiQM8TxPNjzJPE1cTSSgtI5YhUjHED2UGAMDngCtAg7DofaKOcs9aCpBu280T+dMiupVgCK1K2nS6l7G7nRCchA3AA0Uv/6ZIfmqH+Vbb/8A36n5xrUtvdvLZ75Ux24HBADlgQv610G1C51LRmmupmln7Yl2bqYhcseQGTWo3RkvLxzHG2+djudMnl3Go72zFlb7dtwH021gJkPC3c70KflBOWqS/abVDduxk5I/AL2kaoIyCPBlFG5e6u43nf2Q2EXkka9yqBwCiteeBbPCyQMxYKNkBiYhR7zVIIGEQjEoLSjgxUjkPDzrUy9tovRm0V2UOskrqpxkKK0iIWvZRqfZZCGHiyj3uq/GZvoKKGtlTpjsG8LqA/8AUFejrha6nF3JcN+jEdWqzC303UZj/BayEfPGKgtfXpr5hIF7GCa4Y4J4JyFRsRUCowde2gRuyd90rlQdgzsHizHlUjjgynn3c8Ue1uHVF4sQe/HADJyT3CrVe0vLRPFh3YrXLGKUaZEWKvb2qlHXmpatKg/1aGd3LO0fDwUeQ8+q7GZm8sUEZvdQn5DNEEHBBFTLv7BfG6tx95BXo9GI9X87l/8AuN1dMZ1g6N6kx5sqIPq1PcSSdmpkJCxhBwxhc5xStyqC9ktXkKJFJuK47SIS8RkfTJqR+CrnOB+pqK7mtZTLCQH2SJxAbhIpVuB8jWiQxz65p0MaOBmMEOc8a1twuoyJxOEABA4DaoPE/WrSPsrS3T4YkH6VIZBFIYk3yBGKLnG5gMgVF0g0polzdqGVE3h2JZSe5iavb7S74xRsl7dKgZlFnOYyhPAltpFWF3YxwmBZJ1KSOCl1JvmGTkbiSavtTtrVLNxKmWvoRkjeFwGfJAIPMV0b071BbxhFNEs8vaiOUqXQszZBK9XpGJ/0cZF5tcL+i0q9pMil1AbALHgB/wDKRkEkjpkImSgbn4LQgl9Qa83Yj9YEIHidpY1uyQCcDPOpEZJXjIyUYg48q6BwLP0ls+e1ZK1CUTX90AfenKD77es6Etz0l1ZsfuLU7Pm7uWX7LT6ZaQQyyyIBHFE8jYGThFLHFWYs9eaGzjlALsruuPbVY/aYGo9FtIwMRIAvGtDuTdabZyt7zQLu+a+werpJp7anpNzbom9/fRRzYip43spZ4mjVxhkBYZ2cf0ai6nPsAZJpp4zbiII4IkZ87yRxGBwomM54MOf+VTPEZMxNIxO07n97OONdBbCWwifUmTD8kqwtJ7jU7VW4jtu1kP5UO49bwrDNeci011JMx+YCgfQCtU1S10eC3mnEjdtcrAgQFjkjJNWN1a3yyS24919jHYUORxI4gVq0pttKvZE/EMLInm78BXRdymmafGeJZJR/Zc56jzq/0DSdRcy3FhbSy/E8YJNTdG9DDsH6P2wIODslkWn6K9HH56VOn9S4p+hPRx+TanF9Eeoehej20wkF3eT+EbQbKtpLmYx29pZyMoXC7YyqAebHhWnWPqkZZ9pmf3yOQ8h1SyCKNnNE5JNNrSw39zaNY36qjqkcqwO6THHEgih4V0n1NLO3Tj7YlCxL4ycyf+EV0UQnS4Jm7kaKPByCu8sWz5k9R59V9Z9sO0jH7wcx8QrhRAogVo0winmtjwAfen9WT/A9ROBV3cdq2F90VeG+W1c2McLXJxs7ZiqYzxNW0tzImZ7YQN8ImEv6gCpJTGo2jdIxwi+JqLSbMwIl1bQztxJMiK/FufOo444kSONFREUKqqMAAdwA6jz69QsDKGmhH7zmy/H/AJ124+RBwQe412wqWVleOeL8SPu+IeFafqUN5AH3AFR7VXN923sRjCd572qe6S3aFWjmYySbPYjLhPNyOQqK3ENxPOl7csZ5N7ozhl+m5cqK3he7J8KsrNlb1ib8Qj2R8I/YPP8AYvtKtb7LMDHLj8ROf18an0LU4j+67KZfI7G+zVLbalFnfYXAx4JvH3TNLeTWcvaoZIn79yMoP3FRa5pd0Nt0xgkIwXQ8DUD6WkSRw6lEyKMAF9zfrk1FAZSOyDuPiCkD7tVvZJFhnwX/AEH7J5/7Dap5qKwByA/b/8QAFBEBAAAAAAAAAAAAAAAAAAAAYP/aAAgBAgEBPwAB/8QAFxEAAwEAAAAAAAAAAAAAAAAAATBAQf/aAAgBAwEBPwCkIy//2Q==",
+      "product_price": "50,000",
+      "id": 12
+    }
+  ]
+}

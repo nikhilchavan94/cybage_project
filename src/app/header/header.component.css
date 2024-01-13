@@ -1,0 +1,51 @@
+.navbar {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+}
+
+.navlist {
+    display: flex;
+    list-style-type: none;
+}
+
+li a {
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(106, 214, 250);
+}
+
+.navserch {
+    border: 2px solid violet;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    height: 2pc;
+    width: 20pc;
+    border-radius: 5px;
+}
+
+.buttonsearch {
+    border: 4px solid violet;
+    height: 2.2pc;
+    border: 1px solid violet;
+    border-radius: 5px;
+    width: 5pc;
+}
+
+h1 a {
+    color: rgb(106, 214, 250);
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.serach_list {
+    position: absolute;
+    display: list-item;
+    z-index: 10;
+    background-color: #ffff;
+    width: 250px;
+    top: 62px;
+    border: 1px solid #ddd;
+    margin-left: 330px;
+    list-style: none;
+    height: 300px;
+}

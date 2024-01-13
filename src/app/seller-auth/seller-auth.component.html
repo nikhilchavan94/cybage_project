@@ -1,0 +1,24 @@
+<p>seller-auth works!</p>
+
+<div *ngIf="!showlogin" class="form-layout">
+    <form class="form" [formGroup]="form" (ngSubmit)="submit_seller_auth(form.value)">
+        <input style="cursor:default;" class="form-input" type="text" placeholder="Enter Name" formControlName="name">
+        <input style="cursor:default;" class="form-input" type="text" placeholder="Enter Surname" formControlName="surname">
+        <input style="cursor:default;" class="form-input" type="eamil" placeholder="Enter E-mail" formControlName="email">
+        <input style="cursor:default;" class="form-input" type="password" placeholder="Enter Password" formControlName="password">
+        <button style="cursor:default;" class="form-button">Sign Up</button><br><br>
+        <a class="alreadyacc" style="cursor: pointer; margin-left: 30px;" (click)="openlogin()">Already have an Account Click to Login</a>
+    </form>
+</div>
+
+<!-- login part seller -->
+
+<div *ngIf="showlogin" class="login">
+    <form [formGroup]="loginform" (ngSubmit)="logsubmit(loginform.value)">
+        <p style="margin-left: 80px; color:red">{{error}}</p>
+        <input style="cursor:default;" class="form-input" type="text" placeholder="Enter Email" formControlName="email">
+        <input style="cursor:default;" class="form-input" type="password" placeholder="Enter Password" formControlName="password">
+        <button style="cursor:default;" class="form-button">Login</button>
+        <div class="createacc"><a (click)="opensignup()" style="cursor: pointer;">Create An Account</a></div>
+    </form>
+</div>

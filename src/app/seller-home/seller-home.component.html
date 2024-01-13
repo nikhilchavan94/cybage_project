@@ -1,0 +1,32 @@
+<p>seller-home works!</p>
+
+
+<p style="color: green;">{{delete_message}}</p>
+<table border="1px">
+    <thead>
+        <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr *ngFor="let item of product_list">
+            <td><img src="{{item.product_imgurl}}"></td>
+            <td>{{item.product_name}}</td>
+            <td>{{item.product_category}}</td>
+            <td>{{item.product_description}}</td>
+            <td>{{item.product_price}}</td>
+            <td>
+                <fa-icon (click)="delete_product(item.id)" [icon]="icon"></fa-icon>
+            </td>
+            <td>
+                <fa-icon routerLink="/seller_home/update_product/{{item.id}}" [icon]="icon2"></fa-icon>
+            </td>
+        </tr>
+
+    </tbody>
+</table>

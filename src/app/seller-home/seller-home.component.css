@@ -1,0 +1,18 @@
+table {
+    border-color: lightblue;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+table td,
+table th {
+    border: 1px solid lightblue;
+    padding: 10px;
+    min-height: 160px;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}

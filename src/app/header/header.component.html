@@ -1,0 +1,28 @@
+<nav class="navbar">
+    <h1>
+        <a routerLink="/">E-Commerce</a>
+    </h1>
+    <!-- keyup or key down evenets happens when key release -->
+    <div *ngIf="menuType==='default'"><input class="navserch" (keyup)="saerch_product($event)" type="text" placeholder="Enter Search Item"><button class="buttonsearch">Search</button></div>
+    <ul class="serach_list" *ngFor="let item of serach_show">
+        <li>{{item.product_name}}</li>
+        <li>{{item.product_detail}}</li>
+    </ul>
+    <div [ngSwitch]="menuType">
+        <ul *ngSwitchCase="'default'" class="navlist">
+            <li> <a routerLink="/">Home</a> </li>
+            <li> <a routerLink="/seller_auth">Seller</a></li>
+            <li> <a routerLink="/seller_login">Seller Login</a> </li>
+            <li> <a>Cart(0)</a></li>
+        </ul>
+
+
+        <ul *ngSwitchCase="'seller'" class="navlist">
+
+            <li><a routerLink="/seller_home">Product List</a> </li>
+            <li> <a routerLink="/seller_add_product">Add Products</a></li>
+            <li> <a (click)="logout() ">Logout</a></li>
+            <li><a>{{seller_name}}</a></li>
+        </ul>
+    </div>
+</nav>

@@ -1,0 +1,17 @@
+<p>seller-add-product works!</p>
+<div class="add_product">
+    <h1 style="color: rgb(107, 214, 250);margin-left: 450px;">Add New Product</h1>
+    <div class="form-layout">
+        <p style="color: rgb(14, 184, 252); margin-left: 100px;">{{message}}</p>
+        <form class="form" [formGroup]="product_form" (ngSubmit)="add_product(product_form.value)">
+
+            <input type="text" class="form-input" placeholder="Enter Product Name" formControlName="product_name">
+            <input type="text" class="form-input" placeholder="Enter Product Category" formControlName="product_category">
+            <input type="text" class="form-input" placeholder="Enter Product Description" formControlName="product_description">
+            <input type="text" class="form-input" placeholder="Enter Product Image Url" formControlName="product_imgurl">
+            <input type="text" class="form-input" placeholder="Enter Product Price" formControlName="product_price">
+            <button style="cursor:default;" class="form-button">Add Product</button>
+
+        </form>
+    </div>
+</div>
