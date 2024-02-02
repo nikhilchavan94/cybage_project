@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ECommerceServicesService } from '../service/e-commerce-services.service';
+
 import { Router } from '@angular/router';
 import { ProductsService } from '../service/products.service';
 import { product } from 'data_type';
@@ -12,7 +13,8 @@ import { product } from 'data_type';
 export class HeaderComponent implements OnInit {
   menuType: string = 'default';
   seller_name:string='';
-  serach_show:any | product
+  serach_show:any | product;
+  user_name:any;
   constructor(private router: Router,private product_service:ProductsService) {}
   ngOnInit(): void {
     this.router.events.subscribe((val: any) => {
@@ -29,6 +31,12 @@ export class HeaderComponent implements OnInit {
           let seller_data=seller_detail && JSON.parse(seller_detail)[0]
           this.seller_name=seller_data.name
          }
+        }else if(localStorage.getItem('user'))
+        {
+          let user_detail=localStorage.getItem('user');
+          let user_data=user_detail &&JSON.parse(user_detail);
+          this.user_name=user_data.name;
+          this.menuType='user';
         } else {
           console.log('seller out');
           this.menuType = 'default';
@@ -37,10 +45,16 @@ export class HeaderComponent implements OnInit {
     });
   
   }
-  logout()
+  logout_seller()
   {
     localStorage.removeItem('seller');
     this.router.navigate([''])
+    
+  }
+  logout_user()
+  {
+    localStorage.removeItem('user');
+    this.router.navigate(['/user_signup'])
   }
 
   saerch_product(query:KeyboardEvent)
@@ -49,9 +63,23 @@ export class HeaderComponent implements OnInit {
       this.product_service.search_products(element.value).subscribe((result)=>
       {
         console.log(result);
-        this.serach_show=result;    
-      })
-      
-      
+        
+        this.serach_show=result;
+        this.serach_show.length=5;                
+      })    
   }  
+
+  search(value:string)
+  {
+    this.router.navigate([`search/${value}`])
+  }
+  hideserach()
+  {
+    this.serach_show=undefined;
+  }
+
+  serach_keydown(id:any)
+  {
+    this.router.navigate(['/product_detail/'+id])
+  }
 }

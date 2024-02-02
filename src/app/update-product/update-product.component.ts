@@ -32,8 +32,6 @@ message:string=''
   });
   ngOnInit(): void {}
 
-
-
   update_product(data:any)
   {
   this.service.update_product(this.product_id,data).subscribe((result)=>

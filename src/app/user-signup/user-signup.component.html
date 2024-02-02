@@ -1,0 +1,22 @@
+<p>user-signup works!</p>
+<div class="form-layout" *ngIf="!formswitch">
+    <form class="form" [formGroup]="form" (ngSubmit)="submit_user_signup(form.value)">
+        <input style="cursor:default;" class="form-input" type="text" placeholder="Enter Name" formControlName="name">
+        <input style="cursor:default;" class="form-input" type="text" placeholder="Enter Surname" formControlName="surname">
+        <input style="cursor:default;" class="form-input" type="eamil" placeholder="Enter E-mail" formControlName="email">
+        <input style="cursor:default;" class="form-input" type="password" placeholder="Enter Password" formControlName="password">
+        <button style="cursor:default;" class="form-button">Sign
+            Up</button><br><br>
+        <a class="alreadyacc" style="cursor: pointer; margin-left: 30px;" (click)="openlogin()">Already have an Account Click to Login</a>
+    </form>
+</div>
+
+<div class="form-layout" *ngIf="formswitch">
+    <form class="form" [formGroup]="loginform" (ngSubmit)="submit_user_login(loginform.value)">
+        <input style="cursor:default;" class="form-input" type="eamil" placeholder="Enter E-mail" formControlName="email">
+        <input style="cursor:default;" class="form-input" type="password" placeholder="Enter Password" formControlName="password">
+        <button style="cursor:default;" class="form-button">Sign
+            Up</button><br><br>
+        <a class="alreadyacc" style="cursor: pointer; margin-left: 30px;" (click)="opensignup()">Don't Have an Account ?</a>
+    </form>
+</div>

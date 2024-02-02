@@ -38,7 +38,6 @@ error:string='';
 openlogin()
 {
   this.showlogin=true;
-
 }
 
 // login part seller

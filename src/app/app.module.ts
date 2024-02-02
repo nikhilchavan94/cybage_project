@@ -10,12 +10,15 @@ import { SellerAuthComponent } from './seller-auth/seller-auth.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import{HttpClientModule} from '@angular/common/http';
 import { SellerHomeComponent } from './seller-home/seller-home.component';
-import { SellerLoginComponent } from './seller-login/seller-login.component';
+
 import { SellerAddProductComponent } from './seller-add-product/seller-add-product.component';
 import { SellerProductListComponent } from './seller-product-list/seller-product-list.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { UpdateProductComponent } from './update-product/update-product.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SearchPageComponent } from './search-page/search-page.component';
+import { ProductDetailPageComponent } from './product-detail-page/product-detail-page.component';
+import { UserSignupComponent } from './user-signup/user-signup.component';
 
 
 @NgModule({
@@ -25,10 +28,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HomeComponent,
     SellerAuthComponent,
     SellerHomeComponent,
-    SellerLoginComponent,
     SellerAddProductComponent,
     SellerProductListComponent,
-    UpdateProductComponent
+    UpdateProductComponent,
+    SearchPageComponent,
+    ProductDetailPageComponent,
+    UserSignupComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,11 @@
+<p>product-detail-page works!</p>
+<div class="col-sm-3">
+    <div class="product_detail" *ngIf="product_result">
+        <div> <img class="image" [src]="product_result.product_imgurl" alt=" Img Not Found "></div>
+        <div class="pro_name"> {{product_result.product_name}}</div>
+        <div class="pro_cat">Product Category :{{product_result.product_category}}
+        </div><button>Add To
+            Cart</button> <button>Buy Now</button>
+        <div><button (click)="quantity('max')">+</button><input class="quantity_input" type="text" value="{{count}}"><button (click)="quantity('min')">-</button></div>
+    </div>
+</div>

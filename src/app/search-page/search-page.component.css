@@ -11,11 +11,11 @@
 }
 
 .product-item {
-    width: 70%;
+    width: 270%;
     margin: 20px;
     border-style: outset;
     padding: 5px;
-    height: 300px;
+    height: 200px;
     border-radius: 10px;
     border-color: rgba(255, 245, 245, 0.979);
 }
@@ -23,13 +23,13 @@
 .product-row-list {
     border-style: groove;
     border-color: lightblue;
-    width: 13%;
+    width: 70%;
 }
 
 .product_deatail,
 .product_price {
     margin-top: 5px;
-    margin-left: 20px;
+    margin-left: 50px;
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
@@ -40,9 +40,15 @@ a {
     color: black;
     font-size: 15px;
     height: 50%;
+    margin-left: 50px;
 }
 
 .material-symbols-outlined {
     margin-left: 50px;
     margin-top: 5px;
+}
+
+.product_deatil_wrap {
+    margin-left: 200px;
+    margin-top: -130px;
 }
